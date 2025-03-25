@@ -10,3 +10,6 @@ sudo bpftrace -e 'tracepoint:syscalls:sys_enter_open { printf("%s %s\n", comm, s
 sudo bpftrace -e 'tracepoint:raw_syscalls:sys_enter { @[comm] = count(); }'
 ```
 测试代码
+
+ebpf_qemu_2.py 的代码，监控qemu中的很多关键点位的，测试通过了。
+
