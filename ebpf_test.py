@@ -1,4 +1,6 @@
 from bcc import BPF
+import time
+
 
 # 定义 eBPF 程序
 bpf_code = """
